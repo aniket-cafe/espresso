@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./animate.css">
+    </head>
+
+    <body>
+        <main id="front-page">      
+            <div class="sidetr" id="top"></div>
+            <div class="sidetr" id="bottom"></div>
+
+            <h1>ESPRESSO</h1>
+            <img id="logo" src="./sprite/logo.png">
+            <p id="tag">THE COFFEE SHOP</p>
+            <hr id="logo-separator">
+
+            <form id="loginbutts">
+                <button type="button" onclick="openMenu()">EXPLORE </button>
+                <br><br>
+            </form>
+        </main>    
+        
+        <div id="main-page">
+
+            <nav>
+                <img id="logo-nav" src="./sprite/logo.png">
+                <h1>ESPRESSO</h1>
+                <img id="ham" onclick="toggleHam()" src="./sprite/ham.png">
+
+                <div id="ham-menu">
+
+                </div>
+            </nav>
+
+        </div>       
+    
+        <script type="text/javascript">
+            function openMenu() {
+                document.getElementById("front-page").style.display = "none";
+                document.getElementById("main-page").style.display = "block";
+              }
+
+              function toggleHam() {
+                  var ele=document.getElementById("ham-menu");
+                    if(ele.style.display === "block")
+                        ele.style.display = "none";
+                    else
+                        ele.style.display = "block";
+              }
+        </script>
+    </body>
+</html>

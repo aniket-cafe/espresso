@@ -1,0 +1,160 @@
+
+@media only screen and (max-device-width: 450px){
+    @font-face {
+        font-family: CF;
+        src: url('./font/Brewmaster-Gothic-Round.ttf');
+      }
+    
+    body{
+        overflow: hidden;
+        font-family:CF;
+        background-color:whitesmoke;
+    }
+
+    #front-page{
+        display:none;
+    }
+
+    h1{
+        position: absolute;
+        left:50%;
+        top:40%;
+        font-size:4em;
+    }
+
+    #logo{
+        position: fixed;
+        width:300px;
+        height:300px;
+        top:41%;
+        left:7%;
+    }
+
+    #tag{
+        position: fixed;
+        top:54%;
+        left:16%;
+    }
+
+    #loginbutts{
+        display:flex;
+        flex-direction:column;
+        position:fixed;
+        left:51.5%;
+        top:55%;
+    }
+
+    #logo-separator{
+        position: fixed;
+        background:lightgray;
+        width:2px;
+        height:300px;
+        margin-left:40%;
+        margin-top:74%;
+    }
+
+    #loginbutts button{
+        width:200px;
+        padding:5px 20px;
+        height:70px;
+        font-family:CF;
+        font-size:1.5em;
+        background:whitesmoke;
+    }
+
+    #loginbutts button{
+        color:#F5F5F5;
+        text-decoration:none;
+        border-radius:5px;
+        border:solid 0px #00A86B;
+        background:#00A86B;
+        text-align:center;
+          transition: all 0.1s;
+        box-shadow: 0px 6px 0px #00A86B;
+      }
+      
+      #loginbutts button:active{    
+          box-shadow: 0px 2px 0px #00A86B;
+          position:relative;
+          top:4px;
+      }
+
+      #loginbutts button:hover{
+          color:#000;
+      }
+
+    .sidetr{
+        background: #00A86B;
+        width:700px;
+        height:700px;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        position:fixed;
+        margin:-5px;
+    }
+
+    #top{
+        left:30%;
+        top:-5%;
+        transform: rotate(270deg);
+    }
+
+    #bottom{
+        top:70%;
+        transform: rotate(90deg);
+    }
+
+    /* main page */
+    #main-page{
+        position: fixed;
+        background:whitesmoke;
+        width:95%;
+        height:95%;
+        display:block;
+        left:2.5%;
+        top:2.5%;
+        border:1px solid lightgray;
+        border-radius: 5px;
+    }
+
+    nav{
+        width:100%;
+        height:10%;
+        background:lightgray;
+        position: absolute;
+        display:flex;
+        flex-direction: column;
+        border-radius: 5px;
+    }
+
+    #logo-nav{
+        margin-top:-2%;
+        margin-left:-2%;
+        width:200px;
+        height:200px;
+    }
+
+    nav h1{
+        margin-left:-32%;
+        margin-top:-5%;
+    }
+
+    #ham{
+        position: absolute;
+        width:70px;
+        height:70px;
+        margin-left:85%;
+        margin-top:5%;
+    }
+
+    #ham-menu{
+        position: fixed;
+        background:lightgray;
+        width:95%;
+        height:86%;
+        margin-top:16%;
+        display:none;
+        border-radius: 5px;
+    }
+    /* main page */
+
+}
